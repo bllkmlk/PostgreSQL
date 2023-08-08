@@ -100,7 +100,7 @@ SET first_name = 'Şamil',
 	birthday = '1971-03-17'
 WHERE id = 7;
 
-DELETE FROM author // 5 ADET VERİNİN SİLİNMESİ 
+DELETE FROM author -- 5 ADET VERİNİN SİLİNMESİ 
 WHERE id >50
 
 
