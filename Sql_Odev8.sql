@@ -1,3 +1,4 @@
+-- Tablo oluşturuldu 
 CREATE TABLE author(
 	id SERIAL PRIMARY KEY NOT NULL,
 	first_name VARCHAR(50) NOT NULL,
@@ -5,7 +6,7 @@ CREATE TABLE author(
 	email VARCHAR(100),
 	birthday DATE 
 );
-
+-- 5 adet veri eklendi 
 INSERT INTO  author (first_name,last_name,email,birthday)
 VALUES 
 	('Bilal', 'Kamalak','bilal@gmail.com', '2000-09-04'),
@@ -14,6 +15,7 @@ VALUES
 	('Alper', 'Mart','alper@gmail.com', '2000-12-25'),
 	('Zeynep', 'Kamalak','zeynep@gmail.com', '2000-11-22');
 
+-- Mockaroo üzerinden 50 adet verinin eklenmesi 
 insert into author (first_name, last_name, email, birthday) values ('Kincaid', 'Overnell', 'kovernell0@irs.gov', '1907-01-21');
 insert into author (first_name, last_name, email, birthday) values ('Guenna', 'McPhilip', null, '1952-11-24');
 insert into author (first_name, last_name, email, birthday) values ('Anabel', 'Beart', 'abeart2@nih.gov', '1994-12-23');
@@ -65,6 +67,7 @@ insert into author (first_name, last_name, email, birthday) values ('Suzie', 'O'
 insert into author (first_name, last_name, email, birthday) values ('Ulberto', 'Mattocks', 'umattocks1c@boston.com', null);
 insert into author (first_name, last_name, email, birthday) values ('Kai', 'Haughan', 'khaughan1d@t.co', '1955-01-18');
 
+-- 5 adet verinin update edilmesi 
 UPDATE author
 SET first_name = 'Merhaba',
 	last_name = 'Dünya',
@@ -100,7 +103,8 @@ SET first_name = 'Şamil',
 	birthday = '1971-03-17'
 WHERE id = 7;
 
-DELETE FROM author -- 5 ADET VERİNİN SİLİNMESİ 
+-- 5 ADET VERİNİN SİLİNMESİ
+DELETE FROM author  
 WHERE id >50
 
 
