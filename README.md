@@ -1,2 +1,2 @@
 # PostgreSQL
-PatikaPostgreSQL
+https://github.com/bllkmlk/PostgreSQL
